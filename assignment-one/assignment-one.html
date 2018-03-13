@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<a href="javascript:void(0)" class="btn_overlay">Turn on the overlay effect</a>
+
+	<div class="overlay_wrapper">
+		<div class="content">
+			OVERLAY		
+		</div>
+	</div>
+
+	<script type="text/javascript" src='js/jquery-1.12.0.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".btn_overlay").click(function(){
+				$(".overlay_wrapper").fadeIn();
+			});
+			$(".overlay_wrapper").click(function(){
+				$(this).fadeOut();
+			});
+		});
+	</script>
+</body>
+</html>
